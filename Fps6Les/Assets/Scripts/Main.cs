@@ -9,8 +9,10 @@ namespace Geekbrains
 		public FlashLightController FlashLightController { get; private set; }
 		public InputController InputController { get; private set; }
 		public PlayerController PlayerController { get; private set; }
-		public WeaponController WeaponController { get; private set; }
-		public SelectionController SelectionController { get; private set; }
+        public SaveDataRepository SaveDataRepository { get; private set; }
+        //public PhotoController PhotoController { get; private set; }
+        public WeaponController WeaponController { get; private set; }
+        public SelectionController SelectionController { get; private set; }
 		public Inventory Inventory { get; private set; }
 		public Transform Player { get; private set; }
 		public Transform MainCamera { get; private set; }
@@ -33,13 +35,19 @@ namespace Geekbrains
 			InputController = new InputController();
 			WeaponController = new WeaponController();
 			SelectionController = new SelectionController();
-			_controllers = new IOnUpdate[5];
+            //PhotoController = new PhotoController();
+            SaveDataRepository = new SaveDataRepository();
+            
+			_controllers = new IOnUpdate[7];
 			_controllers[0] = FlashLightController;
-			_controllers[1] = InputController;
+            //_controllers[1] = PhotoController;
+            _controllers[1] = InputController;
 			_controllers[2] = PlayerController;
 			_controllers[3] = WeaponController;
 			_controllers[4] = SelectionController;
-		}
+           
+            //_controllers[5] = SaveDataRepository;
+        }
 
 		public void OnStartCoroutine(IEnumerator routine)
 		{
