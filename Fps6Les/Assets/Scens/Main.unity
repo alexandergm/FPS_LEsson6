@@ -237,6 +237,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 103012813}
+  - component: {fileID: 103012814}
   m_Layer: 0
   m_Name: Aims
   m_TagString: Untagged
@@ -251,7 +252,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103012812}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.781135, y: 0.9154476, z: 2.9523604}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -265,6 +266,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &103012814
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103012812}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -4.6050005, y: 6.015, z: -2.505}
+  m_Size: 41.089996
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 1154402150}
+    - renderer: {fileID: 122648363}
+    - renderer: {fileID: 2085880169}
+    - renderer: {fileID: 594580404}
+    - renderer: {fileID: 788538881}
+    - renderer: {fileID: 61638542}
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.05
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.025
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.0125
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &122648359
 GameObject:
   m_ObjectHideFlags: 0
@@ -3023,7 +3063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.971525, b: 0.9811321, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3278,7 +3318,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.06, y: 0.13}
   m_SizeDelta: {x: 5, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2111875651
@@ -3327,7 +3367,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2119942358}
   - component: {fileID: 2119942357}
-  - component: {fileID: 2119942356}
   - component: {fileID: 2119942355}
   m_Layer: 0
   m_Name: MiniMapCamera
@@ -3348,14 +3387,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 395feba81d3ef16419e5864fbc3061da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!81 &2119942356
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119942354}
-  m_Enabled: 1
 --- !u!20 &2119942357
 Camera:
   m_ObjectHideFlags: 0
